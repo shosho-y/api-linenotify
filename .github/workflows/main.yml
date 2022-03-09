@@ -3,7 +3,8 @@ name: test_line_notify
 
 # 発火タイミング
 on:
-  push:
+  schedule:
+    - cron: '0 22 * * *'
 
 jobs:
   build:
